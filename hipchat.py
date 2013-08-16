@@ -40,7 +40,9 @@ class __HipfabConfig:
                     self.token = json.load(conf_f)['TOKEN']
             except IOError:
                 print "Couldn't find hipfab config file."
-                self.token = raw_input("Please enter the hipchat token now:")
+                print "Put a json config file in this location (" + CONFIG_FILE + ", and hipfab will find it next time"
+                print 'Read the README for more details'
+                self.token = raw_input("Please enter the hipchat token now: ")
         return self.token
 
 get_token = __HipfabConfig()

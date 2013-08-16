@@ -67,7 +67,7 @@ This way, you could run a whole bunch of Fabric tasks and then tell the deployme
 
 ## Check Room
 
-You can also use Hipfab to check to see if someone is in a particular Hipchat room. This can be used to make sure that someone who is in charge of a deployment is online and ready to verify the deployments.
+You can also use Hipfab to check to see if someone is in a particular Hipchat room. This can be used to make sure that someone who is in charge of a deployment is online and ready to verify the deploymentst.
 
 ### Usage
 
@@ -82,7 +82,7 @@ You can also use Hipfab to check to see if someone is in a particular Hipchat ro
     def deploy_my_thing():
         run('ls')
 
-If `joe` was in the room, the console output will look something like this:
+If joe was in the room, the console output will look something like this:
 
     bash$ fab deploy_my_thing
     [Hipchat] 'joe' is present; continuing with deployment.
@@ -130,6 +130,13 @@ If he wasn't, you would see something like this:
   fabfile.py
   [Hipchat] (Not) Sending message: 'Deployed 'bar'.' to 'deployments' as user 'Fabric [bill]'.
   ```
+
+* You need to have a hipchat API token to use this. You can either enter it manually every time you run it, or you can put it the file `~/.hipfab.json`. Use the following format:
+```
+{
+  "TOKEN" : "YOUR TOKEN HERE"
+}
+```
 
 ## Contributions
 
