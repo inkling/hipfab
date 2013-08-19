@@ -38,7 +38,7 @@ In the console:
 
 In the hipchat room:
 
-![Deployed my thing? Oh boy!](https://git.inkling.com/martinis/hipfab/raw/master/README_1.png)
+![Deployed my thing? Oh boy!](https://github.com/inkling/hipfab/raw/master/README_1.png)
 
 You can pass any arguments to the `HipchatTask` decorator you normally pass to the `task` decorator.
 
@@ -96,7 +96,7 @@ and proceed like normal.
 
 If he wasn't, you would see something like this:
 
-![Oh no! Joe isn't in the room!](https://git.inkling.com/martinis/hipfab/raw/master/README_2.png)
+![Oh no! Joe isn't in the room!](https://github.com/inkling/hipfab/raw/master/README_2.png)
 
 
 #### Arguments
