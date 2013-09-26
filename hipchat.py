@@ -199,6 +199,7 @@ def send_message(*args, **kwargs):
 def _send_message(message=None,
                  room='deployments',
                  color='green',
+                 message_format='text',
                  notify=False,
                  failure=False,
                  hip_name='Fabric',
@@ -266,6 +267,7 @@ def _send_message(message=None,
                 'from': name,
                 'color': color if not failure else 'red',
                 'message': message,
+                'message_format': message_format,
                 'notify': notify,
             })
             if resp.json() != {u'status' : u'sent'}:
